@@ -1,0 +1,106 @@
+.categories{
+    padding: 5rem;
+    background-color: $color-grey-light;
+
+    &__heading-2{
+        color: $color-primary-light;
+        text-transform: uppercase;
+    }
+
+    &__heading-3{
+        width: 60%;
+        margin: 0 auto;
+        color: $color-primary-light;
+    }
+
+    &__btn{
+        width: 30rem;
+        margin: 0 auto;
+        text-align: center;
+        background-color:  $color-primary;
+        
+        
+    }
+
+    &__btn a{
+        text-decoration: none;
+        color: $color-white;
+        
+    }
+}
+
+.categories-grid{
+
+        margin: 8rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); 
+        grid-gap: 5rem;
+
+        @include responsive(phone){
+            grid-template-columns: minmax(30rem, 1fr);
+            margin: 2rem;
+        }
+    
+}
+
+.category{
+
+        position: relative;
+
+        &__img{
+            width: 100%;
+            opacity: 1;     
+        }
+
+        &__text{
+            @include centerHV;
+            color: $color-primary-light;
+            font-size: 5rem;
+            letter-spacing: 5px;
+            
+            opacity: 0;
+            padding: 2rem;
+            border: 3px solid $color-primary-light;
+
+            @include responsive(phone){
+                font-size: 3rem;
+                letter-spacing: 0;
+            }
+
+            @media only screen and (any-hover: none){
+                opacity: 1;
+                font-size: 3rem;
+                letter-spacing: normal;
+                text-transform: uppercase;
+                background-color: $color-primary-light;
+                box-sizing: initial;
+                color: white;
+                border: none;
+                padding: 1rem;
+                
+                width: 25rem;
+                height: auto;
+                left: calc(25rem / 2);
+                top: 5rem;
+                
+                clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+                
+            }
+
+        }
+
+        &__link:hover{
+
+            .category__img{
+                opacity: 0.4;
+            }
+
+            .category__text {
+                opacity: 1;
+            }
+        }
+        
+}
+
+
+

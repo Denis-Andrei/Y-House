@@ -1,0 +1,50 @@
+@mixin centerHV{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+
+@mixin touch-screens{
+    @media not all and (pointer: coarse){
+        &:hover{
+            @content;
+        }
+    }
+}
+
+@mixin responsive($bp){
+    @if $bp == phone{
+        @media screen and(max-width: 37.5em){
+            @content
+        }
+    };// 600px
+
+    @if $bp == tab-small{
+        @media screen and(max-width: 50em){
+            @content
+        }
+    }; //800px
+    
+    @if $bp == tab-P{
+        @media screen and(max-width: 62.5em){
+            @content
+        };
+    } //1000px
+
+    @if $bp == tab-L{
+        @media screen and(max-width: 75em){
+            @content
+        }; //1280px
+    }
+
+    @if $bp == desk-L{
+        @media screen and(max-width: 112.5em){
+            @content
+        }; //180    0px
+    }
+}
+
+
+ 

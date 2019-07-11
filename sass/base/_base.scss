@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+
+    @include responsive(desk-L){
+        font-size: 70%;       
+    }
+    @include responsive(tab-L){
+        font-size: 60%;
+    }
+    @include responsive(tab-small){
+        font-size: 53%;       
+    }
+
+    @include responsive(phone){
+        font-size: 45%;       
+    }
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: $color-white;
+    
+    
+}

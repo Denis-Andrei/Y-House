@@ -1,0 +1,28 @@
+.cta{
+    background-image: linear-gradient(rgba(160, 160, 160, 0.5), rgba(61, 61, 61, 0.5)),  url('/img/a.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include responsive(tab-small){
+        flex-direction: column;
+        height: 25rem;
+    }
+
+    &__btn{
+        background-color: $color-primary;
+        width: 20rem;
+        text-align: center;
+        
+
+        a{
+            
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+}

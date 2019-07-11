@@ -1,0 +1,39 @@
+.about{
+
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    @include responsive(tab-small){
+        grid-template-columns: 1fr;
+        
+    }
+
+    &__info{
+        padding: 5rem;
+    }
+
+    &__heading{
+        text-transform: uppercase;
+        color: $color-primary;
+        margin-bottom: 6rem;
+       
+    }
+
+    &__text{
+        font-size: $font-default;
+        color: $color-primary-light;
+        text-align: center;
+        
+    }
+
+    &__img{
+        width: 100%;
+        @include responsive(tab-small){
+            width: 70%;
+            
+        }
+    }
+}
