@@ -13,21 +13,11 @@
         color: $color-primary-light;
     }
 
-    &__btn{
-        width: 30rem;
-        margin: 0 auto;
+     &__btn{
         text-align: center;
-        background-color:  $color-primary;
-        
-        
+     }
     }
-
-    &__btn a{
-        text-decoration: none;
-        color: $color-white;
-        
-    }
-}
+    
 
 .categories-grid{
 

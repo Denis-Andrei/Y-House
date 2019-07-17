@@ -29,7 +29,8 @@ body {
 .heading-1 {
   font-size: 4rem;
   font-weight: 600;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .heading-2 {
   font-size: 3rem;
@@ -57,6 +58,12 @@ body {
 
 .u-margin-left-sm {
   margin-left: 2rem; }
+
+.u-margin-top-md {
+  margin-top: 4rem; }
+
+.u-margin-top-lg {
+  margin-top: 6rem; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/header.jpg");
@@ -143,13 +150,7 @@ body {
     margin: 0 auto;
     color: #D65C4F; }
   .categories__btn {
-    width: 30rem;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #E54E3E; }
-  .categories__btn a {
-    text-decoration: none;
-    color: #fff; }
+    text-align: center; }
 
 .categories-grid {
   margin: 8rem;
@@ -239,13 +240,6 @@ body {
     .cta {
       flex-direction: column;
       height: 25rem; } }
-  .cta__btn {
-    background-color: #E54E3E;
-    width: 20rem;
-    text-align: center; }
-    .cta__btn a {
-      color: #fff;
-      text-decoration: none; }
 
 .testimonials {
   background-color: rgba(100, 100, 100, 0.1);
@@ -318,33 +312,169 @@ body {
       font-weight: 600;
       text-decoration: none; }
 
-.btn, .btn:link, .btn:visited {
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-  border: none;
-  padding: 1.5rem;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-  transition: all .2s; }
+.contact {
+  width: 90%;
+  margin: 10rem auto;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("/img/header.jpg");
+  background-position: bottom;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; }
+  @media screen and (max-width: 37.5em) {
+    .contact {
+      width: 100%;
+      margin: 0; } }
+  @media screen and (max-width: 75em) {
+    .contact {
+      grid-template-columns: 1fr;
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 40%), url("/img/header.jpg"); } }
 
-.btn:hover {
-  transform: translateY(-3px);
-  background-color: #D65C4F;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+.form {
+  padding: 3rem; }
+  @media screen and (max-width: 37.5em) {
+    .form {
+      margin-top: 10rem; } }
+  .form__group {
+    margin: 2rem 4rem; }
+    @media screen and (max-width: 62.5em) {
+      .form__group {
+        margin: 2rem 1rem; } }
+  .form__input, .form__textarea {
+    padding: 1.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px; }
+    @media screen and (max-width: 62.5em) {
+      .form__input, .form__textarea {
+        width: 100%; } }
+  .form__btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer; }
 
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+.contact-info {
+  justify-self: center; }
+  @media screen and (max-width: 37.5em) {
+    .contact-info {
+      margin-top: 4rem; } }
+  .contact-info__heading {
+    color: #E54E3E; }
+  .contact-info h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #E54E3E; }
+  .contact-info__item {
+    display: flex;
+    align-items: center;
+    padding: 2rem; }
+  .contact-info__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+    fill: #E54E3E; }
 
-@media screen and (hover: none) {
+.house-container {
+  width: 80%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  grid-gap: 3rem; }
+  @media screen and (max-width: 75em) {
+    .house-container {
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (max-width: 62.5em) {
+    .house-container {
+      grid-template-columns: 1fr; } }
+
+.house-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.1);
+  border: 1px solid #b6b6b6;
+  color: #D65C4F; }
+  .house-box__img {
+    width: 100%;
+    align-self: start;
+    grid-row: 1 /-1; }
+  .house-box__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2rem; }
+    .house-box__info-heading {
+      grid-column: 1/-1;
+      text-transform: uppercase;
+      justify-self: center; }
+      .house-box__info-heading svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: #E54E3E;
+        margin-right: 1rem; }
+    .house-box__info-h4 {
+      display: flex;
+      justify-content: center; }
+    .house-box__info-icons {
+      display: flex;
+      margin: 0 auto;
+      fill: #E54E3E; }
+      .house-box__info-icons svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1.5rem; }
+    .house-box__info-text {
+      font-size: 1.6rem; }
+  .house-box__btn {
+    font-size: 2.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #E54E3E;
+    color: #fff;
+    text-align: center; }
+    .house-box__btn:hover {
+      background-color: #B14337; }
+
+.header-pg1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% 80%;
+  align-items: center; }
+
+.btn {
+  background-color: #E54E3E;
+  font-family: 'Montserrat', sans-serif; }
+  .btn, .btn:link, .btn:visited {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s; }
   .btn:hover {
-    transform: translateY(0);
-    background-color: #D65C4F; }
+    transform: translateY(-3px);
+    background-color: #D65C4F;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
   .btn:active {
-    transform: translateY(3px); } }
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+  @media screen and (hover: none) {
+    .btn:hover {
+      transform: translateY(0);
+      background-color: #D65C4F; }
+    .btn:active {
+      transform: translateY(3px); } }
 
 .feature {
   display: grid;

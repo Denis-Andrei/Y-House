@@ -12,17 +12,4 @@
         flex-direction: column;
         height: 25rem;
     }
-
-    &__btn{
-        background-color: $color-primary;
-        width: 20rem;
-        text-align: center;
-        
-
-        a{
-            
-            color: $color-white;
-            text-decoration: none;
-        }
-    }
 }
