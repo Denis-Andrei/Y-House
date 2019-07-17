@@ -3,7 +3,7 @@
     background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('/img/header.jpg'); 
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
     padding: 2rem;
 
     display: grid;
@@ -18,13 +18,18 @@
     }
 }
 
-.logo{
-    width: 20rem;
+.logo-box{
+    width: 15rem;
     margin-left: 5rem;
 
     @include responsive(tab-small){
         width: 150px;
         margin-left: 1rem;
+    }
+
+    &__logo{
+        width: 15rem;
+        height: 15rem;
     }
 }
 
@@ -74,17 +79,15 @@
 }
 
 .btn-box{
+    
     grid-column: 1/-1;
     align-self: center;
     justify-self: center;
 
     &__btn{
-        background-color: $color-primary;
+        cursor: pointer;
     }
+
 }
 
 
-// .container{
-//     display: flex;
-//     flex-direction: column;
-// }

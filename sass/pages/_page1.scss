@@ -1,0 +1,100 @@
+.house-container{
+    width: 80%;
+    margin: 3rem auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-gap: 3rem;
+    
+    @include responsive(tab-L){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include responsive(tab-P){
+        grid-template-columns: 1fr;
+    }
+}
+
+.house-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+
+    background-color: $color-grey-light;
+    border: 1px solid #b6b6b6;
+
+    
+    
+    color: $color-primary-light;
+
+    
+    &__img{
+        width: 100%;
+        align-self: start;
+        grid-row: 1 /-1;
+        
+        
+    }
+
+    &__info{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+
+        &-heading{
+            grid-column: 1/-1;
+            text-transform: uppercase;
+            justify-self: center;
+            
+            svg{
+                width: 1.5rem;
+                height: 1.5rem;
+                fill: $color-primary;
+                margin-right: 1rem;
+            }
+        }
+
+        &-h4{
+            display: flex;
+            justify-content: center;
+        }
+
+        
+
+        &-icons{
+            display: flex;  
+            margin:0 auto;
+            fill: $color-primary;
+
+            
+            svg{
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-right: 1.5rem;
+                
+            }
+        }
+
+        &-text{
+            font-size: $font-default;
+        }
+
+    }
+
+    &__btn{
+        font-size: 2.3rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: $color-primary;
+        
+        color: $color-white;
+        text-align: center;
+
+        &:hover{
+            background-color: $color-primary-dark;
+        }
+  
+    }
+}

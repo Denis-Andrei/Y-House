@@ -36,7 +36,7 @@
     @if $bp == tab-L{
         @media screen and(max-width: 75em){
             @content
-        }; //1280px
+        }; //1200px
     }
 
     @if $bp == desk-L{

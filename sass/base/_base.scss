@@ -10,13 +10,13 @@ html{
     font-size: 62.5%;
 
     @include responsive(desk-L){
-        font-size: 70%;       
+        font-size: 60%;       
     }
     @include responsive(tab-L){
-        font-size: 60%;
+        font-size: 55%;
     }
     @include responsive(tab-small){
-        font-size: 53%;       
+        font-size: 50%;       
     }
 
     @include responsive(phone){

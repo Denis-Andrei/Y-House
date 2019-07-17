@@ -1,0 +1,15 @@
+.header-pg1{
+    background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('/img/header.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20% 80%;
+    
+    align-items: center;
+
+}
+

@@ -14,19 +14,10 @@
     }
 
     &__btn{
-        width: 30rem;
-        margin: 0 auto;
         text-align: center;
-        background-color:  $color-primary;
-        
-        
     }
 
-    &__btn a{
-        text-decoration: none;
-        color: $color-white;
-        
-    }
+    
 }
 
 .categories-grid{
@@ -46,6 +37,7 @@
 .category{
 
         position: relative;
+        
 
         &__img{
             width: 100%;
@@ -88,17 +80,21 @@
             }
 
         }
-
+        
+        
         &__link:hover{
-
+            
+            
             .category__img{
                 opacity: 0.4;
+                transition: all .5s;
             }
 
             .category__text {
+                transition: all .5 s;
                 opacity: 1;
             }
-        }
+        } 
         
 }
 
