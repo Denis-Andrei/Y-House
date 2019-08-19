@@ -1,6 +1,10 @@
 .categories{
     padding: 5rem;
     background-color: $color-grey-light;
+    visibility: initial;
+    // opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
 
     &__heading-2{
         color: $color-primary-light;
@@ -16,7 +20,8 @@
      &__btn{
         text-align: center;
      }
-    }
+}
+
     
 
 .categories-grid{

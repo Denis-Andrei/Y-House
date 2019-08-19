@@ -7,21 +7,38 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.jpg">
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <title>Y-house </title>
 </head>
 <body>
         <header class="header">
             
-                <img class="logo" src="img/logo1.png" alt="logo">
+            
+                <a class="logo-box" href="/index.html">
+                    <img class="logo-box__logo" src="img/yhousewhite.png" alt="logo">
+                </a>
+            
             
 
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="/page1.html" class="nav__link">Propreties</a></li>
-                    <li class="nav__item"><a href="/contact.html" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="/index.html" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="/propretiesPage.html" class="nav__link">Propreties</a></li>
+                    <li class="nav__item"><a href="/contactPage.html" class="nav__link">Contact</a></li>
                 </ul>
+
+                
+                <button class="nav__hamburger"><svg class="nav__hamburger-icon"><use xlink:href="img/sprite.svg#icon-menu"></use></svg></button>
+                
             </nav>
+
+            <ul class="hamburger-menu">
+                <button class="hamburger-menu__icon"><svg class="nav__hamburger-icon"><use xlink:href="img/sprite.svg#icon-circle-with-cross"></use></svg></button>
+                <li class="hamburger-menu__item"><a href="/index.html" class="nav__link nav__link-h ">Home</a></li>
+                <li class="hamburger-menu__item"><a href="/propretiesPage.html" class="nav__link nav__link-h ">Propreties</a></li>
+                <li class="hamburger-menu__item"><a href="/contactPage.html" class="nav__link nav__link-h ">Contact</a></li>
+            </ul>
+            
         
 
             <div class="header-main">
@@ -30,8 +47,8 @@
             </div>
 
             <div class="btn-box">
-                <a href="/page1.html"><button class="btn btn-box__btn u-margin-right-sm">Rent a House</button></a>
-                <a href="/page1.html"><button class="btn btn-box__btn u-margin-left-sm">Buy a House</button></a>
+                <a href="/propretiesPage.html"><button class="btn btn-box__btn u-margin-right-sm">Rent a House</button></a>
+                <a href="/propretiesPage.html"><button class="btn btn-box__btn u-margin-left-sm">Buy a House</button></a>
             </div>
             
 
@@ -41,27 +58,27 @@
 
         <main class="container">
 
-            <section class="features">
+            <section class="hidden features">
 
-                <div class="feature">
+                <div class=" feature">
                     <img class="feature__icon" src="img/SVG/house-outline.svg"  alt="house icon">
                     <h3 class="feature__heading  heading-3 ">Quality Houses</h3>
                     <p class="feature__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia laudantium placeat suscipit atque! Vero aperiam,</p>
                 </div> 
 
-                <div class="feature">
+                <div class=" feature">
                     <img class="feature__icon" src="img/SVG/hand.svg" alt="hand icon">
                     <h3 class="feature__heading heading-3 ">Best price</h3>
                     <p class="feature__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia laudantium placeat suscipit atque! Vero aperiam,</p>
                 </div> 
 
-                <div class="feature">
+                <div class=" feature">
                     <img class="feature__icon" src="img/SVG/clock.svg" alt="clock icon">
                     <h3 class="feature__heading heading-3 ">fast buy</h3>
                     <p class="feature__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia laudantium placeat suscipit atque! Vero aperiam, possimus reiciendis non eos enim cupiditate, sit, architect</p>
                 </div> 
 
-                <div class="feature">
+                <div class=" feature">
                     <img class="feature__icon" src="img/SVG/happiness.svg" alt="happiness icon">
                     <h3 class="feature__heading heading-3 ">Happy clients</h3>
                     <p class="feature__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia laudantium placeat suscipit atque! Vero aperiam, p</p>
@@ -70,23 +87,23 @@
                 
             </section>
 
-            <section class="categories">
+            <section class="hidden categories">
                 <h2 class="categories__heading-2 heading-2">Choose your dreaming house</h2>
                 <h4 class="categories__heading-3 heading-3--black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur repellat numquam dolore natus voluptatem alias nemo dolorum ipsam atque, consequuntur animi! Incidunt doloremque et sed ipsum nemo officia error!</h4>
 
                 <div class="categories-grid">
 
-                    <div class="category">
-                        <a href="#" class="category__link">
+                    <div class="category terraced">
+                        <!-- <a href="" class="category__link"> -->
                             <img class="category__img" src="img/House-1.jpg" alt="house1">
                             <p class="category__text">Terraced</p>
-                        </a>
+                        <!-- </a> -->
                     </div>
                 
 
                 
-                    <div class="category">
-                        <a href="#"  class="category__link">
+                    <div class="category house">
+                        <a href="/propretiesPage.html"  class="category__link">
                             <img class="category__img" src="img/House-2.jpg" alt="house1">
                             <p class="category__text">House</p>
                         </a>
@@ -94,32 +111,32 @@
                 
 
                 
-                    <div class="category">
-                        <a href="#" class="category__link">
+                    <div class="category maisonette">
+                        <a href="/propretiesPage.html" class="category__link">
                             <img class="category__img" src="img/House-3.jpg" alt="house1">
                             <p class="category__text">Maisonette</p>
                         </a>
                     </div>
 
                 
-                    <div class="category">
-                        <a href="#" class="category__link">
+                    <div class="category farm">
+                        <a href="/propretiesPage.html" class="category__link">
                             <img class="category__img" src="img/House-4.jpg" alt="house1">
                             <p class="category__text">Farm</p>
                         </a>   
                     </div>
 
 
-                    <div class="category">
-                        <a href="#" class="category__link">
+                    <div class="category luxury">
+                        <a href="/propretiesPage.html" class="category__link">
                             <img class="category__img" src="img/House-6.jpg" alt="house1">
                             <p class="category__text">Luxury</p>
                         </a>
                     </div>
 
 
-                    <div class="category">
-                        <a href="#" class="category__link">
+                    <div class="category apartment">
+                        <a href="/propretiesPage.html" class="category__link">
                             <img class="category__img" src="img/House-5.jpg" alt="house1">
                             <p class="category__text">Apartment</p>
                         </a>
@@ -135,15 +152,15 @@
             </section>
 
             <section class="about">
-                <div class="about__info">
+                <div class="hidden-about__info about__info">
                     <h2 class="about__heading heading-2">about us</h2>
                     <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione explicabo necessitatibus delectus? Maxime ut est vitae omnis rerum delectus quia impedit tempora optio quidem facere eligendi, saepe harum. Doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nulla dolorem. Quia error sint voluptates quod, iusto mollitia suscipit deserunt aperiam? Aperiam iure tenetur quos quidem saepe deleniti quaerat dolorum!</p>
                 </div>
 
-                <img src="img/about.jpg" alt="about image" class="about__img">
+                <img src="img/about.jpg" alt="about image" class="hidden-about__img about__img">
             </section>
 
-            <section class="cta">
+            <section  class="cta">
                 <div class="cta__text">
                     <h2 class="cta__heading-2 heading-2">Do you want to buy or rent a house?</h2>
                     <h3 class="cta__heading-3 heading-3">Call us today and find your dreaming house</h3>
@@ -154,24 +171,24 @@
                 </div>
             </section>
 
-            <section class="testimonials">
+            <section class=" testimonials">
                 <div class="testimonials__heading-2">   
                         <h2 class="testimonials__heading-2 heading-2">What customers says</h2>
                 </div>
                 
-                <div class="testimonial">
+                <div class="hidden testimonial">
                     <img src="img/people-1.jpg" alt="people-1" class="testimonial__img">
                     <h3 class="testimonial__heading-3 heading-3">Awesome staff</h3>
                     <p class="testimonial__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt tempora, magnam, voluptate, explicabo aut ex expedita beatae neque quasi perferendis? </p>
                 </div>
 
-                <div class="testimonial">
+                <div class="hidden testimonial">
                     <img src="img/people-2.jpg" alt="people-1" class="testimonial__img">
                     <h3 class="testimonial__heading-3 heading-3">Great experience</h3>
                     <p class="testimonial__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt tempora, magnam, voluptate, explicabo aut ex expedita beatae neque quasi perferendis? Fugiat consequuntur voluptatem esse ex inventore! Nisi, porro numquam?</p>
                 </div>
 
-                <div class="testimonial">
+                <div class="hidden testimonial">
                     <img src="img/people-3.jpg" alt="people-1" class="testimonial__img">
                     <h3 class="testimonial__heading-3 heading-3">Definitely y-house</h3>
                     <p class="testimonial__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt tempora, magnam, voluptate, explicabo aut ex expedita beatae neque quasi perferendis? Fugiat consequuntur voluptatem esse ex inventore! Nisi, porro numquam?</p>
@@ -186,7 +203,7 @@
             <div class="footer__grid">
                 <div class="footer__description">
                     <div class="footer__logo">
-                        <img src="img/logo1.png" alt="logo1">
+                        <img src="img/yhousewhite.png" alt="logo1">
                     </div>
 
                     <p class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente nostrum, asperiores mollitia eaque expedita officia repudiandae, deserunt iusto </p>
@@ -210,6 +227,6 @@
             </div>
                 
         </footer>
-         
+         <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

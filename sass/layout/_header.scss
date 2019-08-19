@@ -20,12 +20,12 @@
     animation: FromTop .5s;
 }
 
-.logo{
-    width: 20rem;
-    margin-left: 5rem;
+.logo-box__logo{
 
+    width: 8rem;
+ 
     @include responsive(tab-small){
-        width: 150px;
+        width: 6rem;
         margin-left: 1rem;
     }
 }
@@ -35,13 +35,17 @@
 
 .nav{
     @include responsive(phone){
-        display: none;
+        width: 8rem;
+        justify-self: end;  
+        
     }
 
     &__list{
         display: flex;
         justify-content: space-around;
-        
+        @include responsive(phone){
+            display: none;
+        }
     }
 
     &__item{
@@ -63,6 +67,30 @@
             text-decoration: none;
             font-size: $font-default;
             text-transform: uppercase;
+        }
+
+        &-h:hover{
+            color: black;
+        }
+    }
+
+    &__hamburger{
+        display: none;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        @include responsive(phone){
+            display: initial;  
+            
+        }
+
+        &-icon{
+            font-weight: 400;
+            width: 6rem;
+            height: 4rem;
+            fill: $color-white;
+            
         }
     }
 }
@@ -89,8 +117,38 @@
     animation: FromLeft 1s ease-in;
 }
 
+//////////////////
+//HAMBURGER MENU
+.hamburger-menu{
+    display: none;
+    background-color: $color-primary-light;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
 
-// .container{
-//     display: flex;
-//     flex-direction: column;
-// }
+    &__icon{
+        margin-right: 1rem;
+        float: right;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+    }
+
+    &__item{
+        list-style: none;
+        padding: 1.5rem;
+        clear: right;
+        margin-top: -1px;
+        border: 1px solid $color-primary-dark;
+        border-collapse: collapse;
+        
+    }
+    
+    
+
+}
+

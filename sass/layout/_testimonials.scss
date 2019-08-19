@@ -8,6 +8,7 @@
     grid-gap: 10rem;
     
     
+    
 
     &__heading-2{
         grid-column: 1/-1;
@@ -31,6 +32,9 @@
     grid-gap: 3rem;
     align-items: center;
     justify-items: center;
+
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
     
     
     min-height: 0;
@@ -58,4 +62,10 @@
         
         
     }
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
 }

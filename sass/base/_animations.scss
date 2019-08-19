@@ -1,20 +1,21 @@
-@keyframes FromTop {
-    0%   {top: -100rem;}
+// @keyframes FromTop {
+//     0%   {top: -100rem;}
     
-    100% {top: 0}
-  }
+//     100% {top: 0}
+//   }
 
-  @keyframes FromLeft {
-    0%   {
-        left: -10rem;
-        opacity: 0.3;}
+//   @keyframes FromLeft {
+//     0%   {
+//         left: -10rem;
+//         opacity: 0;}
     
-    100% {left: 0}
-  }
+//     100% {left: 0;
+//     opacity: 1;}
+//   }
 
-  @keyframes FromBottom {
-    0%   {bottom: -100rem; opacity: 0.2;}
-    80% {opacity: 0.1}
-    100% {bottom: 0}
-  }
+//   @keyframes FromBottom {
+//     0%   {bottom: -100rem; opacity: 0.2;}
+//     80% {opacity: 0.1}
+//     100% {bottom: 0}
+//   }
  

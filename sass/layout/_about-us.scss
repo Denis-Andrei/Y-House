@@ -6,6 +6,8 @@
     align-items: center;
     justify-items: center;
 
+    
+
     @include responsive(tab-small){
         grid-template-columns: 1fr;
         
@@ -13,6 +15,11 @@
 
     &__info{
         padding: 5rem;
+        transform: translateX(0);
+        transition: all 1s ease-in-out;
+        @include responsive(phone){
+            transform: translateY(0);
+        }
     }
 
     &__heading{
@@ -31,9 +38,38 @@
 
     &__img{
         width: 100%;
+        transform: translateX(0);
+        transition: all 1s ease-in-out;
+        
         @include responsive(tab-small){
             width: 70%;
             
         }
+        @include responsive(phone){
+            transform: translateY(0);
+        }
     }
+}
+
+
+///////////////////
+//ANIMATION
+.hidden-about__info{
+    
+    transform: translateX(-1000px);
+}
+.hidden-about__img{
+    width: 0;
+    transform: translateX(1000px);
+}
+@include responsive(phone){
+    .hidden-about__info{
+    
+        transform: translateY(100px);
+    }
+    .hidden-about__img{
+        
+        transform: translateY(100px);
+    }
+    
 }
