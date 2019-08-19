@@ -67,7 +67,7 @@ body {
   margin-top: 6rem; }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Y-House/img/header.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -313,7 +313,7 @@ body {
     transform: translateY(100px); } }
 
 .cta {
-  background-image: linear-gradient(rgba(160, 160, 160, 0.5), rgba(61, 61, 61, 0.5)), url("/img/a.jpg");
+  background-image: linear-gradient(rgba(160, 160, 160, 0.5), rgba(61, 61, 61, 0.5)), url("/Y-House/img/a.jpg");
   background-size: cover;
   background-position: center;
   height: 15rem;
@@ -370,7 +370,7 @@ body {
   transform: translateY(100px); }
 
 .footer {
-  background-image: linear-gradient(145deg, #E54E3E 0%, transparent 160%), url("/img/header.jpg");
+  background-image: linear-gradient(145deg, #E54E3E 0%, transparent 160%), url("/Y-House/img/header.jpg");
   background-size: cover;
   background-position: right bottom;
   padding: 10rem 10rem 4rem 10rem;
@@ -409,7 +409,7 @@ body {
   width: 90%;
   margin: 10rem auto;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("/img/header.jpg");
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("/Y-House/img/header.jpg");
   background-position: bottom;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -421,7 +421,7 @@ body {
   @media screen and (max-width: 75em) {
     .contact {
       grid-template-columns: 1fr;
-      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 40%), url("/img/header.jpg"); } }
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 40%, transparent 40%), url("/Y-House/img/header.jpg"); } }
 
 .form {
   padding: 3rem; }
@@ -470,7 +470,7 @@ body {
     fill: #E54E3E; }
 
 .header-pg1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Y-House/img/header.jpg");
   background-size: cover;
   background-position: center;
   height: 50vh;
