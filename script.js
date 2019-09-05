@@ -7,7 +7,7 @@ var testimonialsOffset;
 
 $(window).on("load", ()=>{
        let windowWidth = $(window).width();
-       if(window.location.href === 'https://denis-andrei.github.io/Y-House/' || window.location.href === 'http://127.0.0.1:8080/index.html'){
+       if(window.location.href === 'https://denis-andrei.github.io/Y-House/' || window.location.href === 'https://denis-andrei.github.io/Y-House/index.html'){
         if(windowWidth > 0 && windowWidth < 600){
             featureOffset = $(".features").position().top/7;
             categoriesOffset = $(".categories").position().top/1.5;
